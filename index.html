@@ -9,12 +9,18 @@
 </head>
 <body>
 	<div id="header">
-			<nav>
-				<a class="active" href="#">Home</a>
-				<a href="img/graphic.png">Infographic</a>
-				<a href="sources.pdf">Sources</a>
-			</nav>
-		</div>
+		<a class="navMenu" onclick="myFunction()">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		</a>
+		<nav class="navText" id="myDIV">
+			<a class="active" href="#">Home</a>
+			<a href="img/graphic.pdf" target="_blank">Infographic</a>
+			<a href="sources.pdf">Sources</a>
+			<a href=""></a>
+		</nav>
+	</div>
 
 	<main id="main-doc">
 		<section class="main-section intro">
@@ -22,28 +28,21 @@
 		</section>
 
 		<section class="main-section gDiv acronym">
-			<h2>Proper Waste Management</h2>
+			<marquee behavior="scroll" direction="left" loop><h4>A decade ago... Bagyong Sendong caused collosal damage on Cagayan de Oro City. In order for such catastrophes to be avoided, we must take measures to mitigate natural hazards like flooding.</h4></marquee>
 		</section>
 
-		<section class="main-section rDiv acronym">
-			<h2>Natural Flood Barriers</h2>
+		<section>
+			<iframe src="https://drive.google.com/file/d/1W9pRYjdDUwH4xd53wOvsdprZtSDH-ePA/preview" allow="autoplay"></iframe>
 		</section>
 
-		<section class="main-section eDiv acronym">
-			<h2>Improved Drainage System</h2>
+		<section class="main-section eDiv acronym" id="infosection">
+			<a href="img/graphic.pdf">DOWNLOAD OUR INFOGRAPHIC</a>
 		</section>
 
-		<section class="main-section gDiv acronym">
-			<h2>Improved Sewage System</h2>
-		</section>
-
-		<section class="main-section rDiv acronym">
-			<h2>Improved Dam System</h2>
-		</section>
 	</main>
 
 	<footer>
-		<h4>Copyright &copy; 2021 by <i>Gianna Saludo</i></h4>
+		<h4>Copyright &copy; 2021 by <i>NSC Clavius A Group 3</i></h4>
 	</footer>
 
 	<div class="loaderDIV">

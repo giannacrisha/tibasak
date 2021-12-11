@@ -1,18 +1,15 @@
 /* MAIN ELEMENTS */
 * {
 	margin: 0;
+	padding: 0;
 	
 }
 
 body {
 	color: #CBC3BB;
-	flex-direction: column;
 	background-color: #4D5437;
-	font-family: poppins;
 	background-image: url('../bkg.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-
 }
 
 a {
@@ -30,14 +27,15 @@ a {
 
 /* NAVIGATION BAR */
 nav {
+	flex-direction: column;
 	font-family: paalalabasWide;
 	padding: 3vw 0 0 3em;
 	float: left;
 	text-align: center;
 	animation-name: fadeInTop;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	display: none;
 }
 
 nav a {
@@ -60,15 +58,51 @@ nav a:hover {
 		transform: translateY(-100px);
 	}
 
-	30% {
-		transform: translateY(-100px);
-	}
-
 	100% {
 		transform: translateY(0px);
 	}
 }
 
+
+.navMenu {
+  width: 60px;
+  display: block;
+  padding: 18px 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  float: left;
+}
+
+.navMenu div {
+  height: 5px !important;
+  background: #fff;
+  margin: 7px 0px 7px 0px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.two {
+  width: 35px;
+}
+
+.three {
+  width: 50px;
+}
+
+.navMenu:hover div {
+  width: 60px;
+  background: #CBC3BB;
+}
+/**/
+
+iframe {
+	width: 100%;
+	border: 0 none;
+	height: 810px;
+	padding: 0;
+	margin-bottom: -100px;
+}
+/**/
 .acronym {
 	padding-top: 80px;
 }
@@ -87,15 +121,18 @@ nav a:hover {
 }
 
 /*G DIV*/
+
 .gDiv {
 	background-color: #CBC3BB;
 	text-align: center;
 	color: #4D5437;
+	margin: 0;
+	width: 100%;
 }
 
-.gDiv h2 {
-	font-family: paalalabasWide;
-	font-size: 3em;
+.gDiv h4 {
+	font-family: tropikal;
+	font-size: 1.5em;
 }
 
 /*R DIV*/
@@ -117,9 +154,14 @@ nav a:hover {
 	color: #69635B;
 }
 
-.eDiv h2 {
+#infosection a {
+	color: #4D5437;
 	font-family: paalalabasWide;
 	font-size: 3em;
+}
+
+#infosection a:hover {
+	color: #1e1e1e;
 }
 
 /*E2 DIV*/
@@ -170,10 +212,6 @@ nav a:hover {
 }
 
 /* MAIN DOC */
-
-#main-doc {
-
-}
 
 #header {
 	line-height: 0;
@@ -367,7 +405,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 2) {
 
 nav a {
-	font-size: 0.5rem;
+	font-size: 0.2rem;
 }
 
 }
@@ -385,6 +423,6 @@ nav a {
 }
 
 @font-face {
-	font-family: montserratExtrabold;
-	src: url(../fonts/Montserrat/Montserrat-ExtraBold.ttf);
+	font-family: tropikal;
+	src: url(../fonts/tropikal.otf);
 }
